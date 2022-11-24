@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Megadott adatok:<br>
+        Név: <%= nev %> Életkor: <%= eletkor %>
+    </p>
+    <form action="">
+        <label for="">
+            <p>
+                    név:<br> 
+                <input type="text" name="nev">
+                <div style="color: red;"><%= errors.nev %></div>
+            </p>
+                <p>
+                    eletkor:<br> 
+                <input type="number" name="eletkor">
+                <div style="color: red;"><%= errors.eletkor %></div>
+            </p>
+            <p>
+            <input type="submit" name="submit" >
+            </p>
+        </label>
+    </form>
+    
+</body>
+</html>
